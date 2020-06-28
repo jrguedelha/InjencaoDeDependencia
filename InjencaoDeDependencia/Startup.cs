@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using InjecaoDeDependencia.DI.Classes;
+using InjecaoDeDependencia.DI.Interfaces;
 
 namespace InjencaoDeDependencia
 {
@@ -16,6 +18,9 @@ namespace InjencaoDeDependencia
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IMotoService>(DI => new MotoService("Jose", "XYZ-0000"));
+            services.AddTransient<ICarroService>(DI => new CarroService("Joao"));
+            services.AddTransient<ICaminhaoService>(DI => new CaminhaoService("José", "C"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

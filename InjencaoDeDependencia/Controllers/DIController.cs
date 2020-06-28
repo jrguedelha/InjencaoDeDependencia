@@ -45,7 +45,7 @@ namespace InjecaoDeDependencia.Controllers
                     break;
 
                 case "pesada":
-                    stringBuilder.AppendLine("Carga 1 - ") + _caminhaoService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 1 - " + _caminhaoService.RealizarEntrega(carga1));
                     break;
 
                 default:
