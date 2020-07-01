@@ -19,7 +19,7 @@ namespace InjecaoDeDependencia.DI.Classes
         public string RealizarEntrega(string tipoEntrega)
         {
             if (tipoEntrega == "media")
-                return $"Motorista: {Motorista}\n Entrega de carga media";
+                return $"Motorista: {Motorista}\nEntrega de carga media";
             else
                 return "Voce nao possui o tipo de automovel necessario!";
         }

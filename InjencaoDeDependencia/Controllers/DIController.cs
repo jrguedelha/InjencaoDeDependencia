@@ -24,6 +24,7 @@ namespace InjecaoDeDependencia.Controllers
             _carroService = carroService;
             _caminhaoService = caminhaoService;
         }
+
         [Route("/entregas")]
         public string Entregas()
         {
@@ -54,19 +55,19 @@ namespace InjecaoDeDependencia.Controllers
             }
             stringBuilder.AppendLine("\n");
 
-            //carga2
+            //carga2 - media
             switch (carga2)
             {
                 case "leve":
-                    stringBuilder.AppendLine("Carga 2\n" + _motoService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 2\n" + _motoService.RealizarEntrega(carga2));
                     break;
 
                 case "media":
-                    stringBuilder.AppendLine("Carga 2\n" + _carroService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 2\n" + _carroService.RealizarEntrega(carga2));
                     break;
 
                 case "pesada":
-                    stringBuilder.AppendLine("Carga 2\n" + _caminhaoService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 2\n" + _caminhaoService.RealizarEntrega(carga2));
                     break;
 
                 default:
@@ -76,19 +77,19 @@ namespace InjecaoDeDependencia.Controllers
 
             stringBuilder.AppendLine("\n");
 
-            //carga3
+            //carga3 - pesada
             switch (carga3)
             {
                 case "leve":
-                    stringBuilder.AppendLine("Carga 3\n" + _motoService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 3\n" + _motoService.RealizarEntrega(carga3));
                     break;
 
                 case "media":
-                    stringBuilder.AppendLine("Carga 3\n" + _carroService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 3\n" + _carroService.RealizarEntrega(carga3));
                     break;
 
                 case "pesada":
-                    stringBuilder.AppendLine("Carga 3\n" + _caminhaoService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 3\n" + _caminhaoService.RealizarEntrega(carga3));
                     break;
 
                 default:
