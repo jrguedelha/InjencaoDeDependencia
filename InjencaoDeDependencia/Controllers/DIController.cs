@@ -37,19 +37,19 @@ namespace InjecaoDeDependencia.Controllers
             switch (carga1)
             {
                 case "leve":
-                    stringBuilder.AppendLine("Carga 1 - " + _motoService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 1\n" + _motoService.RealizarEntrega(carga1));
                     break;
 
                 case "media":
-                    stringBuilder.AppendLine("Carga 1 - " + _carroService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 1\n" + _carroService.RealizarEntrega(carga1));
                     break;
 
                 case "pesada":
-                    stringBuilder.AppendLine("Carga 1 - " + _caminhaoService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 1\n" + _caminhaoService.RealizarEntrega(carga1));
                     break;
 
                 default:
-                    stringBuilder.Append("Carga 1 - Tipo de carga nao identificado");
+                    stringBuilder.Append("Carga 1\nTipo de carga nao identificado");
                     break;
             }
             stringBuilder.AppendLine("\n");
@@ -58,19 +58,19 @@ namespace InjecaoDeDependencia.Controllers
             switch (carga2)
             {
                 case "leve":
-                    stringBuilder.AppendLine("Carga 2 - " + _motoService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 2\n" + _motoService.RealizarEntrega(carga1));
                     break;
 
                 case "media":
-                    stringBuilder.AppendLine("Carga 2 - " + _carroService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 2\n" + _carroService.RealizarEntrega(carga1));
                     break;
 
                 case "pesada":
-                    stringBuilder.AppendLine("Carga 2 - " + _caminhaoService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 2\n" + _caminhaoService.RealizarEntrega(carga1));
                     break;
 
                 default:
-                    stringBuilder.Append("Carga 2 - Tipo de carga nao identificado");
+                    stringBuilder.Append("Carga 2\nTipo de carga nao identificado");
                     break;
             }
 
@@ -80,19 +80,19 @@ namespace InjecaoDeDependencia.Controllers
             switch (carga3)
             {
                 case "leve":
-                    stringBuilder.AppendLine("Carga 2 - " + _motoService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 3\n" + _motoService.RealizarEntrega(carga1));
                     break;
 
                 case "media":
-                    stringBuilder.AppendLine("Carga 2 - " + _carroService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 3\n" + _carroService.RealizarEntrega(carga1));
                     break;
 
                 case "pesada":
-                    stringBuilder.AppendLine("Carga 2 - " + _caminhaoService.RealizarEntrega(carga1));
+                    stringBuilder.AppendLine("Carga 3\n" + _caminhaoService.RealizarEntrega(carga1));
                     break;
 
                 default:
-                    stringBuilder.Append("Carga 2 - Tipo de carga nao identificado");
+                    stringBuilder.Append("Carga 3\nTipo de carga nao identificado");
                     break;
             }
 
