@@ -53,6 +53,7 @@ namespace InjecaoDeDependencia.Controllers
                     stringBuilder.Append("Carga 1\nTipo de carga nao identificado");
                     break;
             }
+
             stringBuilder.AppendLine("\n");
 
             //carga2 - media
